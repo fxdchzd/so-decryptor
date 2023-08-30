@@ -1,0 +1,24 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'net.java.dev.jna', name: 'jna', version: '5.13.0'
+    implementation group: 'net.java.dev.jna', name: 'jna-platform', version: '5.13.0'
+    implementation 'commons-codec:commons-codec:1.15'
+    implementation 'org.apache.groovy:groovy:4.0.14'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+}
+
+test {
+    useJUnitPlatform()
+}
