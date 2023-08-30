@@ -95,3 +95,5 @@ public class Main {
         }
     }
 }
+
+/*VMProtect For Java 💀*/
